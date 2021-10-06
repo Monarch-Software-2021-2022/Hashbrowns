@@ -75,5 +75,24 @@ namespace Hashbrowns
                 return builder.ToString();
             }
         }
+
+        public string SHA384Hash(bool lowerCase = false)
+        {
+            using (SHA384 sha384Hash = SHA384.Create())
+            {
+                byte[] bytes = sha384Hash.ComputeHash(Encoding.UTF8.GetBytes(RawText));
+
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    if (lowerCase)
+                        sb.Append(bytes[i].ToString("x2"));
+                    else
+                        sb.Append(bytes[i].ToString("X2"));
+                }
+
+                return sb.ToString();
+            }
+        }
     }
 }
