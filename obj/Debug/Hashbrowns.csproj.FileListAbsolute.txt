@@ -1,0 +1,6 @@
+C:\Users\mary\source\repos\FileEncryptionPrototype\Hashbrowns\bin\Debug\Hashbrowns.dll
+C:\Users\mary\source\repos\FileEncryptionPrototype\Hashbrowns\bin\Debug\Hashbrowns.pdb
+C:\Users\mary\source\repos\FileEncryptionPrototype\Hashbrowns\obj\Debug\Hashbrowns.csproj.AssemblyReference.cache
+C:\Users\mary\source\repos\FileEncryptionPrototype\Hashbrowns\obj\Debug\Hashbrowns.csproj.CoreCompileInputs.cache
+C:\Users\mary\source\repos\FileEncryptionPrototype\Hashbrowns\obj\Debug\Hashbrowns.dll
+C:\Users\mary\source\repos\FileEncryptionPrototype\Hashbrowns\obj\Debug\Hashbrowns.pdb
