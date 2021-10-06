@@ -94,5 +94,45 @@ namespace Hashbrowns
                 return sb.ToString();
             }
         }
+
+        public string SHA512Hash(bool lowerCase = false)
+        {
+            using (SHA512 sha512hash = SHA512.Create())
+            {
+                byte[] bytes = sha512hash.ComputeHash(Encoding.UTF8.GetBytes(RawText));
+
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    if (lowerCase)
+                        sb.Append(bytes[i].ToString("x2"));
+                    else
+                        sb.Append(bytes[i].ToString("X2"));
+                }
+
+                return sb.ToString();
+            }
+        }
+
+        public string RIPEMD160HASH(bool lowerCase = false)
+        {
+            using (RIPEMD160 ripemd = RIPEMD160.Create())
+            {
+                byte[] bytes = ripemd.ComputeHash(Encoding.UTF8.GetBytes(RawText));
+
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    if (lowerCase)
+                        sb.Append(bytes[i].ToString("x2"));
+                    else
+                        sb.Append(bytes[i].ToString("X2"));
+                }
+
+                return sb.ToString();
+            }
+        }
+
+
     }
 }
